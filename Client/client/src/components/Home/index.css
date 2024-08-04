@@ -1,0 +1,51 @@
+/* Base styles */
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex: none;
+    padding: 10px;
+  }
+
+  .home-heading {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+
+  .home-heading {
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}

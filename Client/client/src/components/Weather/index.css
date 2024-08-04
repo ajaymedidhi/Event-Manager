@@ -1,0 +1,57 @@
+.whether-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+  align-items: center;
+ 
+}
+
+.weather-container {
+  background: linear-gradient(120deg, #1488cc, #2b32b2);
+  color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .weather-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .weather-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weather-container label {
+    margin-bottom: 5px;
+  }
+  
+  .weather-container input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .weather-container button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ccee35;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .weather-container button:hover {
+    background-color: #8fb6e0;
+  }
+  
+  .weather-data {
+    margin-top: 20px;
+    text-align: left;
+  }
+  

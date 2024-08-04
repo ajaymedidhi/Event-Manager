@@ -1,0 +1,163 @@
+/* Base styles */
+.events {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar-event {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.add-event-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-event-btn:hover {
+  background-color: #0056b3;
+}
+
+.event-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.event-form h2 {
+  margin-bottom: 20px;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.event-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.event-form button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+  margin-right: 5px;
+}
+
+.event-item h3 {
+  margin-top: 0;
+}
+
+.event-item p {
+  margin: 5px 0;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.weather-btn {
+  margin-top: 10px;
+  background-color: #17a2b8;
+}
+
+.weather-btn:hover {
+  background-color: #138496;
+}
+
+.weather-info {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.weather-error {
+  color: red;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .events {
+    flex-direction: row;
+  }
+
+  .sidebar-event {
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .event-form {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .event-list {
+    flex: 1;
+  }
+}
